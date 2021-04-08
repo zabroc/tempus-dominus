@@ -718,7 +718,7 @@
                     if (currentDate.weekday() === 0) {
                         row = $('<tr>');
                         if (options.calendarWeeks) {
-                            row.append('<td class="cw">' + currentDate.week() + '</td>');
+                            row.append('<td class="cw">' + currentDate.isoWeek() + '</td>');
                         }
                         html.push(row);
                     }
